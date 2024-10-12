@@ -1,5 +1,5 @@
 import React from "react";
-import './uppercase.css';
+import '../StyleText/index.css';
 
 const generateRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -11,8 +11,7 @@ const generateRandomColor = () => {
 };
 
 const TextFormat = ({ text }) => {
-    return (
-        <div className="Text-Format">
+    return <div className="Text-Format">
             {text.split("").map((letra, index) => (
                 <span
                     key={index}
@@ -25,7 +24,6 @@ const TextFormat = ({ text }) => {
                 </span>
             ))};
         </div>
-    );
 };
 
 export default TextFormat;

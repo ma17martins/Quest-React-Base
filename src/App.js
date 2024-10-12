@@ -1,13 +1,13 @@
-import TextFormat from './components/uppercase/TextFormat';
-import './components/uppercase/uppercase.css';
-import Button from './components/button/Button';
+import TextFormat from './components/StyleText/index.jsx';
+import './components/StyleText/index.css';
+import Button from './components/AlertButton/index';
 import React from 'react';
 function App() {
   return (
-    <div className="App">
+    <>
       <TextFormat text="Texto colorido com as letras maiúsculas" />
       <Button label="Baixar CV" />
-    </div>
+    </>
   )
 }
 
